@@ -6,23 +6,23 @@ import Providers from "./Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "IMDb Clobe",
+  title: "IMDb Clone",
   description: "This is IMDb clone website ",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Providers>
-        <body className={inter.className}>
+      <body>
+        <Providers>
           {/* Header  */}
           <Header />
           {/* Navbar */}
 
           {/* SearchBox */}
           {children}
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }
