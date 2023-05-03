@@ -5,7 +5,7 @@ import {useSearchParams} from 'next/navigation'
 
 const NavbarItem = ({param, title}) => {
   const searchParams = useSearchParams();
-  console.log(searchParams,"navbar")
+  // console.log(searchParams,"navbar")
   const genre = searchParams.get('genre');
     return (
     <div className='flex '>
